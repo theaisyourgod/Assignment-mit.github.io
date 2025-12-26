@@ -4,9 +4,169 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI & ML in Cambodia</title>
-<link rel="stylesheet" herf="style.css">
 
+<style>
+/* ===== Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
 
+/* ===== Body ===== */
+body {
+    background: #0f172a;
+    color: #e5e7eb;
+    line-height: 1.7;
+}
+
+/* ===== Animations ===== */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== Header ===== */
+header {
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    padding: 80px 20px;
+    text-align: center;
+    animation: fadeUp 1s ease;
+}
+
+header h1 {
+    font-size: 2.8rem;
+}
+
+header p {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #e0e7ff;
+}
+
+/* ===== Navigation ===== */
+nav {
+    background: rgba(2, 6, 23, 0.85);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: #e5e7eb;
+    text-decoration: none;
+    margin: 0 16px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+/* ===== Sections ===== */
+section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 70px 20px;
+    animation: fadeUp 1s ease;
+}
+
+section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: #93c5fd;
+}
+
+section p {
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+}
+
+/* ===== Cards ===== */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.card {
+    background: #020617;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.6);
+}
+
+.card h3 {
+    color: #a5b4fc;
+    margin-bottom: 10px;
+}
+
+/* ===== Footer ===== */
+footer {
+    background: #020617;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+    color: #94a3b8;
+    font-size: 0.9rem;
+}
+
+/* ===== Mobile Responsive ===== */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.1rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px 10px;
+    }
+
+    section {
+        padding: 50px 18px;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 60px 15px;
+    }
+
+    header h1 {
+        font-size: 1.9rem;
+    }
+
+    nav {
+        font-size: 0.95rem;
+    }
+}
+</style>
 </head>
 
 <body>
@@ -87,3 +247,4 @@
 
 </body>
 </html>
+
